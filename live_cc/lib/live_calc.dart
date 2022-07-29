@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 import './button_icon_text.dart';
 
 TextStyle textStyle =
@@ -108,7 +108,7 @@ class _LiveCalcState extends State<LiveCalc> {
                     color:
                         gender == "female" ? Colors.blueAccent : Colors.white,
                     child: ButtonIconText(
-                        icon: FontAwesomeIcons.venus,
+                        icon: Icons.female,
                         color:
                             gender == "female" ? Colors.white : Colors.black54,
                         text: 'FEMALE',
@@ -123,7 +123,7 @@ class _LiveCalcState extends State<LiveCalc> {
                   child: BoxContainer(
                     color: gender == "male" ? Colors.blueAccent : Colors.white,
                     child: ButtonIconText(
-                        icon: FontAwesomeIcons.mars,
+                        icon: Icons.male,
                         text: 'MALE',
                         color: gender == "male" ? Colors.white : Colors.black54,
                         onPress: () {
